@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Structure_Roof_Center_Half.obj-e20d6d94f77f407d1953bc31073a68f1.mesh"
+
+[deps]
+
+files=[ "res://.import/Structure_Roof_Center_Half.obj-e20d6d94f77f407d1953bc31073a68f1.mesh" ]
+
+source_file="res://assets/models/modular_house_collection/Structure_Roof_Center_Half.obj"
+dest_files=[ "res://.import/Structure_Roof_Center_Half.obj-e20d6d94f77f407d1953bc31073a68f1.mesh", "res://.import/Structure_Roof_Center_Half.obj-e20d6d94f77f407d1953bc31073a68f1.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

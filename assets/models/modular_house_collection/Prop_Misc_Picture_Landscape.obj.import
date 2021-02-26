@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Misc_Picture_Landscape.obj-fa92d84a7043e583f79b51f23a59c85b.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Misc_Picture_Landscape.obj-fa92d84a7043e583f79b51f23a59c85b.mesh" ]
+
+source_file="res://assets/models/modular_house_collection/Prop_Misc_Picture_Landscape.obj"
+dest_files=[ "res://.import/Prop_Misc_Picture_Landscape.obj-fa92d84a7043e583f79b51f23a59c85b.mesh", "res://.import/Prop_Misc_Picture_Landscape.obj-fa92d84a7043e583f79b51f23a59c85b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

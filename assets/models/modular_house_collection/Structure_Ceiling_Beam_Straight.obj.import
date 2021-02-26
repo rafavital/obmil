@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Structure_Ceiling_Beam_Straight.obj-85659cc221d62e938d207b8b7a81d43b.mesh"
+
+[deps]
+
+files=[ "res://.import/Structure_Ceiling_Beam_Straight.obj-85659cc221d62e938d207b8b7a81d43b.mesh" ]
+
+source_file="res://assets/models/modular_house_collection/Structure_Ceiling_Beam_Straight.obj"
+dest_files=[ "res://.import/Structure_Ceiling_Beam_Straight.obj-85659cc221d62e938d207b8b7a81d43b.mesh", "res://.import/Structure_Ceiling_Beam_Straight.obj-85659cc221d62e938d207b8b7a81d43b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

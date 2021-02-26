@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Bedroom_Bed_Single.obj-f7b6bb8dd0f4e2244cc77599bd909c2d.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Bedroom_Bed_Single.obj-f7b6bb8dd0f4e2244cc77599bd909c2d.mesh" ]
+
+source_file="res://assets/models/modular_house_collection/Prop_Bedroom_Bed_Single.obj"
+dest_files=[ "res://.import/Prop_Bedroom_Bed_Single.obj-f7b6bb8dd0f4e2244cc77599bd909c2d.mesh", "res://.import/Prop_Bedroom_Bed_Single.obj-f7b6bb8dd0f4e2244cc77599bd909c2d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

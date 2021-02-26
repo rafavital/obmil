@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Structure_Kitchen_Cabinet_Base_Half.obj-180b92fce93917e8ec33a8411ce6c4d2.mesh"
+
+[deps]
+
+files=[ "res://.import/Structure_Kitchen_Cabinet_Base_Half.obj-180b92fce93917e8ec33a8411ce6c4d2.mesh" ]
+
+source_file="res://assets/models/modular_house_collection/Structure_Kitchen_Cabinet_Base_Half.obj"
+dest_files=[ "res://.import/Structure_Kitchen_Cabinet_Base_Half.obj-180b92fce93917e8ec33a8411ce6c4d2.mesh", "res://.import/Structure_Kitchen_Cabinet_Base_Half.obj-180b92fce93917e8ec33a8411ce6c4d2.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

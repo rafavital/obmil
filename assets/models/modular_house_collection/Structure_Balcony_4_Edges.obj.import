@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Structure_Balcony_4_Edges.obj-b2d9ff0b217d16ca49f54849493fe71c.mesh"
+
+[deps]
+
+files=[ "res://.import/Structure_Balcony_4_Edges.obj-b2d9ff0b217d16ca49f54849493fe71c.mesh" ]
+
+source_file="res://assets/models/modular_house_collection/Structure_Balcony_4_Edges.obj"
+dest_files=[ "res://.import/Structure_Balcony_4_Edges.obj-b2d9ff0b217d16ca49f54849493fe71c.mesh", "res://.import/Structure_Balcony_4_Edges.obj-b2d9ff0b217d16ca49f54849493fe71c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

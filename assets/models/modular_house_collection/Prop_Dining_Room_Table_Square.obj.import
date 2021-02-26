@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Dining_Room_Table_Square.obj-8a8589445914eeb658ae6a0c97163982.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Dining_Room_Table_Square.obj-8a8589445914eeb658ae6a0c97163982.mesh" ]
+
+source_file="res://assets/models/modular_house_collection/Prop_Dining_Room_Table_Square.obj"
+dest_files=[ "res://.import/Prop_Dining_Room_Table_Square.obj-8a8589445914eeb658ae6a0c97163982.mesh", "res://.import/Prop_Dining_Room_Table_Square.obj-8a8589445914eeb658ae6a0c97163982.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

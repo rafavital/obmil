@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Curtains_Double.obj-234d520d6965ec2e113ae20b7ca37e76.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Curtains_Double.obj-234d520d6965ec2e113ae20b7ca37e76.mesh" ]
+
+source_file="res://assets/models/modular_house_collection/Prop_Curtains_Double.obj"
+dest_files=[ "res://.import/Prop_Curtains_Double.obj-234d520d6965ec2e113ae20b7ca37e76.mesh", "res://.import/Prop_Curtains_Double.obj-234d520d6965ec2e113ae20b7ca37e76.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

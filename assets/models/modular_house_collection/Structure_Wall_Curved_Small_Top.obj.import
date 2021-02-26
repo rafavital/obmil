@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Structure_Wall_Curved_Small_Top.obj-5db0820cb616cd65178c0951392d922a.mesh"
+
+[deps]
+
+files=[ "res://.import/Structure_Wall_Curved_Small_Top.obj-5db0820cb616cd65178c0951392d922a.mesh" ]
+
+source_file="res://assets/models/modular_house_collection/Structure_Wall_Curved_Small_Top.obj"
+dest_files=[ "res://.import/Structure_Wall_Curved_Small_Top.obj-5db0820cb616cd65178c0951392d922a.mesh", "res://.import/Structure_Wall_Curved_Small_Top.obj-5db0820cb616cd65178c0951392d922a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

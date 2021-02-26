@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Structure_Floor.obj-5c567a4f45c122630e4187d06fd1d69b.mesh"
+
+[deps]
+
+files=[ "res://.import/Structure_Floor.obj-5c567a4f45c122630e4187d06fd1d69b.mesh" ]
+
+source_file="res://assets/models/modular_house_collection/Structure_Floor.obj"
+dest_files=[ "res://.import/Structure_Floor.obj-5c567a4f45c122630e4187d06fd1d69b.mesh", "res://.import/Structure_Floor.obj-5c567a4f45c122630e4187d06fd1d69b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

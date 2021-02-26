@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Structure_Wall_Straight_Top.obj-41712abca3e9f282317d557e88c7fa67.mesh"
+
+[deps]
+
+files=[ "res://.import/Structure_Wall_Straight_Top.obj-41712abca3e9f282317d557e88c7fa67.mesh" ]
+
+source_file="res://assets/models/modular_house_collection/Structure_Wall_Straight_Top.obj"
+dest_files=[ "res://.import/Structure_Wall_Straight_Top.obj-41712abca3e9f282317d557e88c7fa67.mesh", "res://.import/Structure_Wall_Straight_Top.obj-41712abca3e9f282317d557e88c7fa67.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

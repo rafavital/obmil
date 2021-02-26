@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Structure_Kitchen_Bar_Edge.obj-500d09aa254a134263d7c3e65be336cd.mesh"
+
+[deps]
+
+files=[ "res://.import/Structure_Kitchen_Bar_Edge.obj-500d09aa254a134263d7c3e65be336cd.mesh" ]
+
+source_file="res://assets/models/modular_house_collection/Structure_Kitchen_Bar_Edge.obj"
+dest_files=[ "res://.import/Structure_Kitchen_Bar_Edge.obj-500d09aa254a134263d7c3e65be336cd.mesh", "res://.import/Structure_Kitchen_Bar_Edge.obj-500d09aa254a134263d7c3e65be336cd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

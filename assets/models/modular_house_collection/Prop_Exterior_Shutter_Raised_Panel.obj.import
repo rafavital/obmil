@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Exterior_Shutter_Raised_Panel.obj-3dc4edc65ab2cfce6578c1178dfb005d.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Exterior_Shutter_Raised_Panel.obj-3dc4edc65ab2cfce6578c1178dfb005d.mesh" ]
+
+source_file="res://assets/models/modular_house_collection/Prop_Exterior_Shutter_Raised_Panel.obj"
+dest_files=[ "res://.import/Prop_Exterior_Shutter_Raised_Panel.obj-3dc4edc65ab2cfce6578c1178dfb005d.mesh", "res://.import/Prop_Exterior_Shutter_Raised_Panel.obj-3dc4edc65ab2cfce6578c1178dfb005d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

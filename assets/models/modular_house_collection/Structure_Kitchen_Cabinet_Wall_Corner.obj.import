@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Structure_Kitchen_Cabinet_Wall_Corner.obj-58f0502acfd1c90e69afe249d8ddd191.mesh"
+
+[deps]
+
+files=[ "res://.import/Structure_Kitchen_Cabinet_Wall_Corner.obj-58f0502acfd1c90e69afe249d8ddd191.mesh" ]
+
+source_file="res://assets/models/modular_house_collection/Structure_Kitchen_Cabinet_Wall_Corner.obj"
+dest_files=[ "res://.import/Structure_Kitchen_Cabinet_Wall_Corner.obj-58f0502acfd1c90e69afe249d8ddd191.mesh", "res://.import/Structure_Kitchen_Cabinet_Wall_Corner.obj-58f0502acfd1c90e69afe249d8ddd191.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

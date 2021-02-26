@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Structure_Stairs_Railing_Post.obj-4f7a4b89068e8b98e10e94980e1ccf68.mesh"
+
+[deps]
+
+files=[ "res://.import/Structure_Stairs_Railing_Post.obj-4f7a4b89068e8b98e10e94980e1ccf68.mesh" ]
+
+source_file="res://assets/models/modular_house_collection/Structure_Stairs_Railing_Post.obj"
+dest_files=[ "res://.import/Structure_Stairs_Railing_Post.obj-4f7a4b89068e8b98e10e94980e1ccf68.mesh", "res://.import/Structure_Stairs_Railing_Post.obj-4f7a4b89068e8b98e10e94980e1ccf68.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
