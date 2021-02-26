@@ -8,9 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Spatial",
+"class": "Room",
+"language": "GDScript",
+"path": "res://src/Room.gd"
+} ]
 _global_script_class_icons={
-
+"Room": ""
 }
 
 [application]
@@ -18,6 +23,11 @@ _global_script_class_icons={
 config/name="obmil"
 run/main_scene="res://assets/scenes/world.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1280
+window/size/height=720
 
 [rendering]
 

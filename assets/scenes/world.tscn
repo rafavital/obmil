@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://src/World.gd" type="Script" id=1]
 [ext_resource path="res://player/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/scenes/room.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/scenes/room_base.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/RoomsManager.gd" type="Script" id=4]
+[ext_resource path="res://assets/scenes/room1.tscn" type="PackedScene" id=5]
 
 [sub_resource type="PlaneMesh" id=1]
 
@@ -25,7 +27,14 @@ material/0 = null
 [node name="CollisionShape" type="CollisionShape" parent="Test Floor/StaticBody"]
 shape = SubResource( 2 )
 
-[node name="Room" parent="." instance=ExtResource( 3 )]
+[node name="Rooms Manager" type="Spatial" parent="."]
+script = ExtResource( 4 )
+rooms = [ ExtResource( 5 ) ]
+
+[node name="Room" parent="Rooms Manager" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5 )
+
+[node name="Room2" parent="Rooms Manager" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12 )
 
 [editable path="Player"]
