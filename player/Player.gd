@@ -1,5 +1,7 @@
 extends KinematicBody
 
+export (bool) var capture_mouse := true
+
 var mouse_sensitivity = 1
 var direction = Vector3()
 var gravity_vec = Vector3()
@@ -24,7 +26,8 @@ var can_slide = false
 
 func _ready():
 	$Head/DirectionIndicator.hide()
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	if capture_mouse:
+		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _input(event):
 	if event is InputEventMouseMotion:
