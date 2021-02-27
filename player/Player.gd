@@ -1,5 +1,7 @@
 extends KinematicBody
 
+signal called_dialogue (id)
+
 export (bool) var capture_mouse := true
 
 var mouse_sensitivity = 1
@@ -184,3 +186,8 @@ func crouching_animation(crouching):
 
 func _on_JumpTimer_timeout():
 	can_jump = true
+
+
+func _on_DialogueChecker_area_entered(area: Area) -> void:
+	if (area.is_in_group("dialogue_triggers")):
+		emit_signal("called_dialogue", area.dialogue_id)

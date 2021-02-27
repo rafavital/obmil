@@ -14,7 +14,6 @@ func _on_generate_new_room (room) -> void:
 	var pos = room.transform.origin
 	room.queue_free()
 	
-	#make room truly random
 	var id = rng.randi_range(0, rooms.size() - 1)
 	
 	var r = rooms[id].instance()
