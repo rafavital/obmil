@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/furniturequepresta/imports/TV_00s.glb" type="PackedScene" id=1]
-[ext_resource path="res://assets/furniturequepresta/materials_n_textures/EvAbMhzXAAEiaHW.png" type="Texture" id=2]
+[ext_resource path="res://assets/furniturequepresta/materials_n_textures/cursed_tv_texture.png" type="Texture" id=2]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 2 )
