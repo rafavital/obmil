@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/obmil_ch.glb-5fa77b5aa972b372144afdd96a11ed18.scn"
+path="res://.import/obmil_male.glb-e8dfbedb82ad62de3a574649e89e5de7.scn"
 
 [deps]
 
-source_file="res://assets/models/obmil_ch.glb"
-dest_files=[ "res://.import/obmil_ch.glb-5fa77b5aa972b372144afdd96a11ed18.scn" ]
+source_file="res://assets/models/character/obmil_male.glb"
+dest_files=[ "res://.import/obmil_male.glb-e8dfbedb82ad62de3a574649e89e5de7.scn" ]
 
 [params]
 
