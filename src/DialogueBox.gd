@@ -8,6 +8,7 @@ onready var show_tween = $ShowDialogueTween
 
 var dialogue_finished := false
 var current_dialogue : String
+var rng = RandomNumberGenerator.new()
 
 func _ready () -> void:
 	_hide()	
@@ -25,11 +26,19 @@ func _input(event: InputEvent) -> void:
 			dialogue_finished = true
 
 func show_dialogue (id : int) -> void:
+	rng.randomize()
+	
 	var dialogue = load_dialogue()
 	
+	#var i = rng.randi_range(0, dialogue.size()-1)
+	#if Global.dialogues.has(i):
+	#	i = rng.randi_range(0, dialogue.size()-1)
+	
 	dialogue_finished = false
-	print (dialogue)
-	text.bbcode_text = dialogue[str(id)]
+	var txt = dialogue[str(id)]
+	text.bbcode_text = txt
+	Global.dialogues[id] = txt
+	
 	text.percent_visible = 0
 	
 	show_tween.interpolate_property(
