@@ -1,26 +1,282 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/scenes/Rooms/room_square.tscn" type="PackedScene" id=1]
-[ext_resource path="res://assets/furniturequepresta/LargeTable.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/furniturequepresta/cadeira.tscn" type="PackedScene" id=3]
-[ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/LixoCozinha.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/models/modular_house_collection/Prop_Dining_Room_Table_Modular_Side.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://assets/models/modular_house_collection/Prop_Dining_Room_Chair.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://assets/models/modular_house_collection/Prop_Dining_Room_Table_Modular_Center.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://assets/models/modular_house_collection/Prop_Kitchen_Trashcan.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://assets/models/modular_house_collection/Prop_Dining_Room_Table_Modular_Corner.obj" type="ArrayMesh" id=6]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.970332, 1, 0.964086 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.350239, 0.565314, 0.328498 )
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 0.303549, 0.39862, 0.149055 )
 
 [node name="Room" instance=ExtResource( 1 )]
 
 [node name="Furniture" type="Spatial" parent="." index="4"]
 
-[node name="Table" parent="Furniture" index="0" instance=ExtResource( 2 )]
+[node name="Table" type="Spatial" parent="Furniture" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.560778, 0, -0.986513 )
 
-[node name="cadeira" parent="Furniture" index="1" instance=ExtResource( 3 )]
+[node name="Prop_Dining_Room_Table_Modular_Center" type="MeshInstance" parent="Furniture/Table" index="0"]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, -0.241051, -0.000542104, 0.235454 )
+mesh = ExtResource( 4 )
+material/0 = null
+
+[node name="Prop_Dining_Room_Table_Modular_Side" type="MeshInstance" parent="Furniture/Table" index="1"]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 0.751381, 0.000657495, 0.239008 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="Prop_Dining_Room_Table_Modular_Side2" type="MeshInstance" parent="Furniture/Table" index="2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.24162, 0.000657495, 0.236229 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="Prop_Dining_Room_Table_Modular_Side3" type="MeshInstance" parent="Furniture/Table" index="3"]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -0.245006, 0.000657495, 1.23649 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="Prop_Dining_Room_Table_Modular_Side4" type="MeshInstance" parent="Furniture/Table" index="4"]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, -0.245006, 0.000657495, -0.751807 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="Prop_Dining_Room_Table_Modular_Corner" type="MeshInstance" parent="Furniture/Table" index="5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.24327, 0.003, 1.23353 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="Prop_Dining_Room_Table_Modular_Corner2" type="MeshInstance" parent="Furniture/Table" index="6"]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 0.751899, 0.00340822, 1.23614 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="Prop_Dining_Room_Table_Modular_Corner3" type="MeshInstance" parent="Furniture/Table" index="7"]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, 0.749021, 0.00340822, -0.753376 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="Prop_Dining_Room_Table_Modular_Corner4" type="MeshInstance" parent="Furniture/Table" index="8"]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, -1.24066, 0.003, -0.756469 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="StaticBody" type="StaticBody" parent="Furniture/Table" index="9"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Furniture/Table/StaticBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.238193, 0, 0.225734 )
+shape = SubResource( 1 )
+
+[node name="Prop_Dining_Room_Chair" type="MeshInstance" parent="Furniture" index="1"]
 transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -2.14623, 0.00738137, -0.281082 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+material/26 = null
+material/27 = null
+material/28 = null
+material/29 = null
+material/30 = null
+material/31 = null
+material/32 = null
+material/33 = null
+material/34 = null
 
-[node name="cadeira2" parent="Furniture" index="2" instance=ExtResource( 3 )]
+[node name="StaticBody" type="StaticBody" parent="Furniture/Prop_Dining_Room_Chair" index="0"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Furniture/Prop_Dining_Room_Chair/StaticBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.559323, 0 )
+shape = SubResource( 2 )
+
+[node name="Prop_Dining_Room_Chair2" type="MeshInstance" parent="Furniture" index="2"]
 transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -2.14623, 0.00738137, -1.1931 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+material/26 = null
+material/27 = null
+material/28 = null
+material/29 = null
+material/30 = null
+material/31 = null
+material/32 = null
+material/33 = null
+material/34 = null
 
-[node name="cadeira3" parent="Furniture" index="3" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2018, 0, -2.06734 )
+[node name="StaticBody" type="StaticBody" parent="Furniture/Prop_Dining_Room_Chair2" index="0"]
 
-[node name="cadeira4" parent="Furniture" index="4" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.343144, 0, -2.06734 )
+[node name="CollisionShape" type="CollisionShape" parent="Furniture/Prop_Dining_Room_Chair2/StaticBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.559323, 0 )
+shape = SubResource( 2 )
 
-[node name="LixoCozinha" parent="Furniture" index="5" instance=ExtResource( 4 )]
+[node name="Prop_Dining_Room_Chair3" type="MeshInstance" parent="Furniture" index="3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.24321, 0.00738137, -2.08334 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+material/26 = null
+material/27 = null
+material/28 = null
+material/29 = null
+material/30 = null
+material/31 = null
+material/32 = null
+material/33 = null
+material/34 = null
+
+[node name="StaticBody" type="StaticBody" parent="Furniture/Prop_Dining_Room_Chair3" index="0"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Furniture/Prop_Dining_Room_Chair3/StaticBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.559323, 0 )
+shape = SubResource( 2 )
+
+[node name="Prop_Kitchen_Trashcan" type="MeshInstance" parent="Furniture" index="4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.64293, 0.00340895, 2.84831 )
+mesh = ExtResource( 5 )
+material/0 = null
+material/1 = null
+
+[node name="StaticBody" type="StaticBody" parent="Furniture/Prop_Kitchen_Trashcan" index="0"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Furniture/Prop_Kitchen_Trashcan/StaticBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.414026, 0 )
+shape = SubResource( 3 )

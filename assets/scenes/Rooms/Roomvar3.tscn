@@ -1,23 +1,125 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/Abajur.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/models/modular_house_collection/Prop_Living_Room_Modular_Couch_Center.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://assets/scenes/Rooms/room_square.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/furniturequepresta/TV_cursed.tscn" type="PackedScene" id=3]
-[ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/Sofa.tscn" type="PackedScene" id=4]
-[ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/TvStand.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/MesinhaCantoSala.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/models/modular_house_collection/Prop_Living_Room_Modular_Couch_Corner.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://assets/models/modular_house_collection/Prop_Living_Room_Side_Table.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://assets/models/modular_house_collection/Prop_Misc_Lamp.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://assets/models/modular_house_collection/Prop_Living_Room_TV_Stand.obj" type="ArrayMesh" id=7]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.288139, 0.446565, 0.297513 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.403367, 0.346978, 0.393156 )
+
+[sub_resource type="BoxShape" id=3]
+extents = Vector3( 1.41936, 0.46106, 0.475154 )
+
+[sub_resource type="BoxShape" id=4]
+extents = Vector3( 0.477881, 0.659434, 0.409338 )
 
 [node name="Room" instance=ExtResource( 2 )]
 
 [node name="Furniture" type="Spatial" parent="." index="4"]
 
-[node name="Abajur" parent="Furniture" index="0" instance=ExtResource( 1 )]
+[node name="Prop_Misc_Lamp" type="MeshInstance" parent="Furniture" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00552207, 0.703409, -2.52287 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
 
-[node name="MesinhaCantoSala" parent="Furniture" index="1" instance=ExtResource( 6 )]
+[node name="StaticBody" type="StaticBody" parent="Furniture/Prop_Misc_Lamp" index="0"]
 
-[node name="Sofa" parent="Furniture" index="2" instance=ExtResource( 4 )]
+[node name="CollisionShape" type="CollisionShape" parent="Furniture/Prop_Misc_Lamp/StaticBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.450878, 0 )
+shape = SubResource( 1 )
 
-[node name="TV_00s" parent="Furniture" index="3" instance=ExtResource( 3 )]
-transform = Transform( -0.000638793, 0, 0.199999, 0, 0.2, 0, -0.199999, 0, -0.000638793, -2.40215, 0.945747, -0.479615 )
+[node name="Prop_Living_Room_Side_Table" type="MeshInstance" parent="Furniture" index="1"]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 0.035235, 0.00340853, -2.53364 )
+mesh = ExtResource( 5 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
 
-[node name="TvStand" parent="Furniture" index="4" instance=ExtResource( 5 )]
+[node name="StaticBody" type="StaticBody" parent="Furniture/Prop_Living_Room_Side_Table" index="0"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Furniture/Prop_Living_Room_Side_Table/StaticBody" index="0"]
+transform = Transform( 1, 0, 7.45058e-09, 0, 1, 0, -7.45058e-09, 0, 1, 0, 0.350049, 0 )
+shape = SubResource( 2 )
+
+[node name="Sofa" type="Spatial" parent="Furniture" index="2"]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, -0.240993, 0, -0.496346 )
+
+[node name="Prop_Living_Room_Modular_Couch_Corner" type="MeshInstance" parent="Furniture/Sofa" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.06423, 0.00340827, -0.146988 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Prop_Living_Room_Modular_Couch_Corner2" type="MeshInstance" parent="Furniture/Sofa" index="1"]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -0.934914, 0.00340827, -0.146289 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Prop_Living_Room_Modular_Couch_Center" type="MeshInstance" parent="Furniture/Sofa" index="2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0641668, 0.00340851, -0.147733 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="StaticBody" type="StaticBody" parent="Furniture/Sofa" index="3"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Furniture/Sofa/StaticBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0671145, 0.472451, -0.116378 )
+shape = SubResource( 3 )
+
+[node name="Prop_Living_Room_TV_Stand" type="MeshInstance" parent="Furniture" index="3"]
+transform = Transform( -0.0108034, 0, 0.999942, 0, 1, 0, -0.999942, 0, -0.0108034, -2.51082, 0.00340849, -0.482063 )
+mesh = ExtResource( 7 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+
+[node name="TV_00s" parent="Furniture/Prop_Living_Room_TV_Stand" index="0" instance=ExtResource( 3 )]
+transform = Transform( 0.199994, 0, -0.00152191, 0, 0.2, 0, 0.00152191, 0, 0.199994, -0.00362176, 0.942339, 0.108637 )
+
+[node name="StaticBody" type="StaticBody" parent="Furniture/Prop_Living_Room_TV_Stand" index="1"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Furniture/Prop_Living_Room_TV_Stand/StaticBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.657535, 0 )
+shape = SubResource( 4 )

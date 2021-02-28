@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://assets/furniturequepresta/materials_n_textures/table.material" type="Material" id=1]
 
-[sub_resource type="ArrayMesh" id=1]
+[sub_resource type="ArrayMesh" id=2]
 resource_name = "object1004"
 surfaces/0 = {
 "aabb": AABB( -0.217814, -0.282205, -0.147758, 0.5, 0.5, 0.916232 ),
@@ -17,19 +17,9 @@ surfaces/0 = {
 "vertex_count": 439
 }
 
-[sub_resource type="BoxShape" id=2]
-extents = Vector3( 0.257448, 0.269102, 0.430832 )
-
 [node name="table_corner" type="Spatial"]
-transform = Transform( 0.17, 0, 0, 0, 0.17, 0, 0, 0, 0.17, 0, 0, 0 )
 
 [node name="object1004" type="MeshInstance" parent="."]
-transform = Transform( 6.96952e-07, 5.84646, -1.04543e-06, 3.48476e-07, -6.96952e-07, -5.84646, -5.84646, 3.48476e-07, 0, 0, 0, 0 )
-mesh = SubResource( 1 )
+transform = Transform( 6.96952e-07, 5.84646, -1.04543e-06, 3.48476e-07, -6.96952e-07, -5.84646, -5.84646, 3.48476e-07, 0, -0.482699, 1.93491, -0.482918 )
+mesh = SubResource( 2 )
 material/0 = null
-
-[node name="StaticBody" type="StaticBody" parent="object1004"]
-
-[node name="CollisionShape" type="CollisionShape" parent="object1004/StaticBody"]
-transform = Transform( 1, -1.42109e-14, 6.77626e-21, 0, 1, -7.06819e-28, 0, 3.55272e-15, 1, 0.0396389, -0.0321706, 0.282733 )
-shape = SubResource( 2 )
