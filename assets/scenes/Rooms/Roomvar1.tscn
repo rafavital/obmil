@@ -17,7 +17,7 @@ extents = Vector3( 1, 0.562256, 1.33866 )
 
 [node name="Room" instance=ExtResource( 1 )]
 
-[node name="Furniture" type="Spatial" parent="." index="5"]
+[node name="Furniture" type="Spatial" parent="." index="4"]
 
 [node name="Prop_Dining_Room_Chair" type="MeshInstance" parent="Furniture" index="0"]
 transform = Transform( -0.647881, 0, -0.761742, 0, 1, 0, 0.761742, 0, -0.647881, 2.25277, 0.00738095, 2.28589 )
