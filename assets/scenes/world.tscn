@@ -7,7 +7,7 @@
 [ext_resource path="res://assets/scenes/room1.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/scenes/dialogue_box.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/scenes/dialogue_trigger.tscn" type="PackedScene" id=7]
-[ext_resource path="res://assets/scenes/room_square.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/scenes/Rooms/room_square.tscn" type="PackedScene" id=8]
 
 [sub_resource type="PlaneMesh" id=1]
 
