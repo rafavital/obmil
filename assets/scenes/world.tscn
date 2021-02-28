@@ -1,13 +1,14 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://src/World.gd" type="Script" id=1]
 [ext_resource path="res://assets/scenes/player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/scenes/room_base.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/scenes/Rooms/Roomvar2.tscn" type="PackedScene" id=3]
 [ext_resource path="res://src/RoomsManager.gd" type="Script" id=4]
-[ext_resource path="res://assets/scenes/room1.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/scenes/Rooms/Roomvar3.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/scenes/dialogue_box.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/scenes/dialogue_trigger.tscn" type="PackedScene" id=7]
 [ext_resource path="res://assets/scenes/Rooms/room_square.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/scenes/Rooms/Roomvar1.tscn" type="PackedScene" id=9]
 
 [sub_resource type="PlaneMesh" id=1]
 
@@ -25,6 +26,9 @@ script = ExtResource( 1 )
 transform = Transform( -25, 0, -2.18557e-06, 0, 1, 0, 2.18557e-06, 0, -25, 0, -0.218443, 0 )
 mesh = SubResource( 1 )
 material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="StaticBody" type="StaticBody" parent="Test Floor"]
 
@@ -33,16 +37,19 @@ shape = SubResource( 2 )
 
 [node name="Rooms Manager" type="Spatial" parent="."]
 script = ExtResource( 4 )
-rooms = [ ExtResource( 5 ) ]
+rooms = [ ExtResource( 9 ), ExtResource( 3 ), ExtResource( 5 ) ]
 
-[node name="Room" parent="Rooms Manager" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5 )
+[node name="Room" parent="Rooms Manager" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.098, 0, -2.35383 )
 
-[node name="Room2" parent="Rooms Manager" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -12 )
+[node name="Room3" parent="Rooms Manager" instance=ExtResource( 8 )]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 5.89035, 0, -2.35383 )
+
+[node name="Room2" parent="Rooms Manager" instance=ExtResource( 8 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 0, 0, 3.63317 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -2.4332, 1, -7.04549 )
+transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, -0.666576, 1, -1.72598 )
 
 [node name="UI" type="Control" parent="."]
 anchor_right = 1.0
@@ -64,19 +71,10 @@ dialogue_id = 0
 [node name="CollisionShape" parent="DialogueTrigger" index="0"]
 shape = SubResource( 3 )
 
-[node name="MeshInstance" type="MeshInstance" parent="."]
+[node name="FakeNPC" type="MeshInstance" parent="."]
 transform = Transform( 0.447332, 0, 0, 0, 1, 0, 0, 0, 0.447332, -3.23186, 1, -13.7937 )
 mesh = SubResource( 4 )
 material/0 = null
-
-[node name="Room" parent="." instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.098, 0, 8.175 )
-
-[node name="Room3" parent="." instance=ExtResource( 8 )]
-transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 5.89035, 0, 8.175 )
-
-[node name="Room2" parent="." instance=ExtResource( 8 )]
-transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 0, 0, 14.162 )
 [connection signal="called_dialogue" from="Player" to="." method="_on_Player_called_dialogue"]
 
 [editable path="Player"]

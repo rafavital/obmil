@@ -1,8 +1,7 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/models/modular_house_collection/Structure_Floor.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://assets/scenes/doorway.tscn" type="PackedScene" id=2]
-[ext_resource path="res://src/Room.gd" type="Script" id=3]
 [ext_resource path="res://assets/furniturequepresta/floor.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/furniturequepresta/wall.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/furniturequepresta/baseboard.tscn" type="PackedScene" id=6]
@@ -33,7 +32,6 @@ extents = Vector3( 3.03891, 1.60484, 0.0515516 )
 extents = Vector3( 1.25202, 1.60484, 0.0515516 )
 
 [node name="Room" type="Spatial"]
-script = ExtResource( 3 )
 
 [node name="FloorOld" type="Spatial" parent="."]
 visible = false

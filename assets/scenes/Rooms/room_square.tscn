@@ -667,3 +667,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.537553, -0.00198947, 3.4167
 
 [node name="doorframe2" parent="Doorframes" instance=ExtResource( 2 )]
 transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 3.41696, -0.00200012, -0.619425 )
+[connection signal="body_entered" from="Doorframes/doorframe/ExitTrigger" to="." method="_on_ExitTrigger_body_entered"]
+[connection signal="body_entered" from="Doorframes/doorframe2/ExitTrigger" to="." method="_on_ExitTrigger_body_entered"]
+
+[editable path="Doorframes/doorframe"]
+
+[editable path="Doorframes/doorframe2"]
