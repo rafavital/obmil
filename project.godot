@@ -24,10 +24,6 @@ config/name="obmil"
 run/main_scene="res://assets/scenes/world.tscn"
 config/icon="res://icon.png"
 
-[autoload]
-
-Global="*res://src/Global.gd"
-
 [display]
 
 window/size/width=1280
