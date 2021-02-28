@@ -25,31 +25,33 @@ func _input(event: InputEvent) -> void:
 			dialogue_finished = true
 
 func show_dialogue (id : int) -> void:
-	var dialogue = load_dialogue(id)
+	var dialogue = load_dialogue()
 	
 	dialogue_finished = false
-	text.bbcode_text = dialogue["text"]
+	print (dialogue)
+	text.bbcode_text = dialogue[str(id)]
 	text.percent_visible = 0
+	
 	show_tween.interpolate_property(
 		text, 
 		"percent_visible", 0, 1, 1, 
 		Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
+		
 	show_tween.start()
 	
 	
 	_show()
 	pass
 	
-func load_dialogue (id : int) -> Dictionary:
+func load_dialogue () -> Dictionary:
 	var file = File.new()
 	assert (file.file_exists (dialogue_file_path))
 
 	file.open (dialogue_file_path, File.READ)
 	var dialogue = parse_json(file.get_as_text()) as Dictionary
 	assert (dialogue.size() > 0)
-	assert (dialogue[str(id)] != null)
 
-	return dialogue[str(id)]
+	return dialogue
 
 
 func _hide () -> void:

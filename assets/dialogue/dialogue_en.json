@@ -1,8 +1,4 @@
 {
-	"0" : {
-		"text" : "I'm a placeholder text", "read" : false
-	},
-	"1" : {
-		"text" : "Another text to exemplify", "read" : false
-	}
+	"0" : "I'm a dialogue",
+	"1" : "I am a dialogue as well"
 }
