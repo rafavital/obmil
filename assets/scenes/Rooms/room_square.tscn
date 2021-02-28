@@ -6,7 +6,6 @@
 [ext_resource path="res://assets/furniturequepresta/baseboard.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/furniturequepresta/wall_top.tscn" type="PackedScene" id=5]
 [ext_resource path="res://src/Room.gd" type="Script" id=6]
-[ext_resource path="res://assets/models/modular_house_collection/Structure_Floor.obj" type="ArrayMesh" id=7]
 [ext_resource path="res://assets/furniturequepresta/ceil.tscn" type="PackedScene" id=8]
 
 [sub_resource type="BoxShape" id=1]
@@ -21,13 +20,13 @@ extents = Vector3( 0.50631, 0.499027, 0.0515516 )
 [sub_resource type="BoxShape" id=4]
 extents = Vector3( 1.01589, 1.60484, 0.0515516 )
 
-[sub_resource type="BoxShape" id=7]
+[sub_resource type="BoxShape" id=5]
 extents = Vector3( 1.46646, 1.60484, 0.0515516 )
 
-[sub_resource type="BoxShape" id=5]
+[sub_resource type="BoxShape" id=6]
 extents = Vector3( 2.91924, 1.60484, 0.0515516 )
 
-[sub_resource type="BoxShape" id=6]
+[sub_resource type="BoxShape" id=7]
 extents = Vector3( 3.03891, 1.60484, 0.0515516 )
 
 [sub_resource type="BoxShape" id=8]
@@ -36,695 +35,130 @@ extents = Vector3( 1.50529, 1.60484, 0.0515516 )
 [sub_resource type="BoxShape" id=9]
 extents = Vector3( 0.941889, 1.60484, 0.0515516 )
 
+[sub_resource type="BoxShape" id=10]
+extents = Vector3( 2.95113, 0.127728, 2.93766 )
+
 [node name="Room" type="Spatial"]
 script = ExtResource( 6 )
 
-[node name="FloorOld" type="Spatial" parent="."]
-visible = false
+[node name="Floor" type="Spatial" parent="."]
 
-[node name="Structure_Floor" type="MeshInstance" parent="FloorOld"]
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor5" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor6" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor7" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor2" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor3" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor4" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor15" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor16" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor17" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -2 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor18" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -3 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor19" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor20" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 2 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor21" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 3 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor22" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor23" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -1 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor24" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor25" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -3 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor26" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 1 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor27" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor28" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 3 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor29" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor30" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -1 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor31" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor32" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -3 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor33" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor34" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor35" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 3 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor36" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor37" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -1 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor38" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -2 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor39" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -3 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor40" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 1 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor41" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 2 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor42" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 3 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor43" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor44" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor45" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor46" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor47" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor48" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 2 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor49" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor50" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor51" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -1 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor52" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -2 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor53" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -3 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor54" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 1 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor55" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor56" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 3 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor57" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor58" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -1 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor59" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -2 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor60" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -3 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor61" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 1 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor62" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 2 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor63" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 3 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor8" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor9" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor10" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -2 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor11" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -3 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor12" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor13" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="Structure_Floor14" type="MeshInstance" parent="FloorOld"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 3 )
-mesh = ExtResource( 7 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-
-[node name="NewFloor" type="Spatial" parent="."]
-
-[node name="floor" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48849, 0, 2.51942 )
 
-[node name="floor2" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor2" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.48849, 0, 2.51942 )
 
-[node name="floor3" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor3" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.488494, 0, 2.51942 )
 
-[node name="floor4" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor4" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.511506, 0, 2.51942 )
 
-[node name="floor5" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor5" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.51151, 0, 2.51942 )
 
-[node name="floor6" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor6" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.51151, 0, 2.51942 )
 
-[node name="floor7" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor7" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48849, 0, 1.51942 )
 
-[node name="floor8" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor8" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.48849, 0, 1.51942 )
 
-[node name="floor9" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor9" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.488494, 0, 1.51942 )
 
-[node name="floor10" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor10" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.511506, 0, 1.51942 )
 
-[node name="floor11" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor11" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.51151, 0, 1.51942 )
 
-[node name="floor12" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor12" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.51151, 0, 1.51942 )
 
-[node name="floor13" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor13" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48849, 0, 0.51942 )
 
-[node name="floor14" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor14" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.48849, 0, 0.51942 )
 
-[node name="floor15" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor15" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.488494, 0, 0.51942 )
 
-[node name="floor16" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor16" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.511506, 0, 0.51942 )
 
-[node name="floor17" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor17" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.51151, 0, 0.51942 )
 
-[node name="floor18" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor18" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.51151, 0, 0.51942 )
 
-[node name="floor19" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor19" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48849, 0, -0.48058 )
 
-[node name="floor20" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor20" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.48849, 0, -0.48058 )
 
-[node name="floor21" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor21" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.488494, 0, -0.48058 )
 
-[node name="floor22" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor22" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.511506, 0, -0.48058 )
 
-[node name="floor23" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor23" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.51151, 0, -0.48058 )
 
-[node name="floor24" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor24" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.51151, 0, -0.48058 )
 
-[node name="floor25" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor25" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48849, 0, -1.48058 )
 
-[node name="floor26" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor26" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.48849, 0, -1.48058 )
 
-[node name="floor27" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor27" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.488494, 0, -1.48058 )
 
-[node name="floor28" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor28" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.511506, 0, -1.48058 )
 
-[node name="floor29" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor29" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.51151, 0, -1.48058 )
 
-[node name="floor30" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor30" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.51151, 0, -1.48058 )
 
-[node name="floor31" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor31" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48849, 0, -2.48058 )
 
-[node name="floor32" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor32" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.48849, 0, -2.48058 )
 
-[node name="floor33" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor33" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.488494, 0, -2.48058 )
 
-[node name="floor34" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor34" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.511506, 0, -2.48058 )
 
-[node name="floor35" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor35" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.51151, 0, -2.48058 )
 
-[node name="floor36" parent="NewFloor" instance=ExtResource( 3 )]
+[node name="floor36" parent="Floor" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.51151, 0, -2.48058 )
 
-[node name="StaticBody" type="StaticBody" parent="NewFloor"]
+[node name="StaticBody" type="StaticBody" parent="Floor"]
 
-[node name="CollisionShape" type="CollisionShape" parent="NewFloor/StaticBody"]
+[node name="CollisionShape" type="CollisionShape" parent="Floor/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00758421, 0, 0.00461662 )
 shape = SubResource( 1 )
 
 [node name="Wall" type="Spatial" parent="."]
+visible = false
 
 [node name="wall" parent="Wall" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.45328, 0, 3 )
@@ -946,15 +380,15 @@ shape = SubResource( 4 )
 
 [node name="CollisionShape9" type="CollisionShape" parent="Wall/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.43705, 1.39564, 2.94744 )
-shape = SubResource( 7 )
+shape = SubResource( 5 )
 
 [node name="CollisionShape2" type="CollisionShape" parent="Wall/StaticBody"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0570301, 1.39564, -3.05589 )
-shape = SubResource( 5 )
+shape = SubResource( 6 )
 
 [node name="CollisionShape3" type="CollisionShape" parent="Wall/StaticBody"]
 transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -3.0501, 1.39564, -0.0535722 )
-shape = SubResource( 6 )
+shape = SubResource( 7 )
 
 [node name="CollisionShape4" type="CollisionShape" parent="Wall/StaticBody"]
 transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 2.94779, 1.39564, 1.39861 )
@@ -1219,6 +653,12 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5789, 3.0288, -2.62773 )
 
 [node name="ceil36" parent="Ceiling" instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5789, 3.0288, -2.62773 )
+
+[node name="StaticBody" type="StaticBody" parent="Ceiling"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Ceiling/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.07489, 0 )
+shape = SubResource( 10 )
 
 [node name="Doorframes" type="Spatial" parent="."]
 
