@@ -16,8 +16,8 @@ func _on_ExitTrigger_body_entered(body: Node) -> void:
 
 func _on_Door_exited_room(door, body) -> void:
 	if body.is_in_group("Player"):
-		var dir = sign(door.transform.basis.z.dot(body.transform.basis.z))
-		if dir > 0:
+		var dot = door.get_global_transform().basis.z.dot(body.get_global_transform().basis.z)
+		print (dot)
+		if dot > 0.4:
 			emit_signal("exited_room", self)	
-			print ("SAIU")
 	

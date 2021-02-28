@@ -19,7 +19,7 @@ material/0 = SubResource( 1 )
 [node name="ExitTrigger" type="Area" parent="." index="1" groups=[
 "door_exit",
 ]]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -2.08859 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -1.31497 )
 
 [node name="CollisionShape" type="CollisionShape" parent="ExitTrigger" index="0"]
 shape = SubResource( 2 )
