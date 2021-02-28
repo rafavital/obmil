@@ -10,6 +10,7 @@
 [ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/LixoCozinha.tscn" type="PackedScene" id=8]
 
 [node name="Room" instance=ExtResource( 1 )]
+room_id = 4
 
 [node name="Furniture" type="Spatial" parent="." index="4"]
 

@@ -8,6 +8,7 @@
 [ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/fogao.tscn" type="PackedScene" id=6]
 
 [node name="Room" instance=ExtResource( 1 )]
+room_id = 18
 
 [node name="Furniture" type="Spatial" parent="." index="6"]
 

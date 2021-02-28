@@ -10,6 +10,7 @@
 extents = Vector3( 0.290846, 0.645135, 0.299246 )
 
 [node name="Room" instance=ExtResource( 1 )]
+room_id = 1
 
 [node name="Furniture" type="Spatial" parent="." index="4"]
 

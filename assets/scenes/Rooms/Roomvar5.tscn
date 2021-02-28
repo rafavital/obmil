@@ -5,6 +5,7 @@
 [ext_resource path="res://assets/scenes/Rooms/room_square.tscn" type="PackedScene" id=3]
 
 [node name="Room" instance=ExtResource( 3 )]
+room_id = 5
 
 [node name="Furniture" type="Spatial" parent="." index="4"]
 

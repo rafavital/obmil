@@ -62,10 +62,20 @@ wait_time = 0.5
 one_shot = true
 
 [node name="DialogueChecker" type="Area" parent="."]
-collision_layer = 524288
+collision_layer = 4
 collision_mask = 2
 
 [node name="CollisionShape" type="CollisionShape" parent="DialogueChecker"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="DoorChecker" type="Area" parent="." groups=[
+"player",
+]]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape" type="CollisionShape" parent="DoorChecker"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0 )
 shape = SubResource( 1 )
 [connection signal="timeout" from="JumpTimer" to="." method="_on_JumpTimer_timeout"]

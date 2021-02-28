@@ -4,6 +4,7 @@
 [ext_resource path="res://assets/furniturequepresta/cadeira.tscn" type="PackedScene" id=2]
 
 [node name="Room" instance=ExtResource( 1 )]
+room_id = 14
 
 [node name="Furniture" type="Spatial" parent="." index="4"]
 

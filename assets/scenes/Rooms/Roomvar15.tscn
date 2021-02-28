@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/Abajur.tscn" type="PackedScene" id=7]
 
 [node name="Room" instance=ExtResource( 2 )]
+room_id = 15
 
 [node name="Furniture" type="Spatial" parent="." index="6"]
 

@@ -5,6 +5,7 @@
 [ext_resource path="res://assets/furniturequepresta/TV_cursed.tscn" type="PackedScene" id=3]
 
 [node name="Room" instance=ExtResource( 1 )]
+room_id = 6
 
 [node name="Furniture" type="Spatial" parent="." index="4"]
 

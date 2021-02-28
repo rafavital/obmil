@@ -8,6 +8,7 @@
 [ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/MesinhaCantoSala.tscn" type="PackedScene" id=6]
 
 [node name="Room" instance=ExtResource( 2 )]
+room_id = 3
 
 [node name="Furniture" type="Spatial" parent="." index="4"]
 

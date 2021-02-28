@@ -20,7 +20,10 @@ material/0 = SubResource( 1 )
 "door_exit",
 ]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -1.31497 )
+collision_layer = 524288
+collision_mask = 4
 
 [node name="CollisionShape" type="CollisionShape" parent="ExitTrigger" index="0"]
 shape = SubResource( 2 )
+[connection signal="area_entered" from="ExitTrigger" to="." method="_on_ExitTrigger_area_entered"]
 [connection signal="body_entered" from="ExitTrigger" to="." method="_on_ExitTrigger_body_entered"]

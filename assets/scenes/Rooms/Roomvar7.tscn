@@ -6,6 +6,7 @@
 [ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/PenteadeiraGrande.tscn" type="PackedScene" id=4]
 
 [node name="Room" instance=ExtResource( 1 )]
+room_id = 7
 
 [node name="Furniture" type="Spatial" parent="." index="4"]
 transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -2.07284, 0, 0.442144 )

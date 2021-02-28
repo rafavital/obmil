@@ -6,6 +6,7 @@
 [ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/PenteadeiraGrande.tscn" type="PackedScene" id=4]
 
 [node name="Room" instance=ExtResource( 1 )]
+room_id = 17
 
 [node name="Furniture" type="Spatial" parent="." index="6"]
 
