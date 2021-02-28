@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/furniturequepresta/cadeira.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/scenes/Rooms/room_square.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/furniturequepresta/LargeTable.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/furniturequepresta/TV_cursed.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/PenteadeiraGrande.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/furniturequepresta/SmallTable.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/Abajur.tscn" type="PackedScene" id=7]
+
+[node name="Room" instance=ExtResource( 2 )]
+
+[node name="Furniture" type="Spatial" parent="." index="6"]
+
+[node name="Table" parent="Furniture" index="0" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.74574, 0.00037094, 1.12192 )
+
+[node name="Table2" parent="Furniture" index="1" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.74574, 0.848626, 1.12192 )
+
+[node name="Table3" parent="Furniture" index="2" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.74574, 1.66123, 1.12192 )
+
+[node name="TV_00s" parent="Furniture" index="3" instance=ExtResource( 4 )]
+transform = Transform( -0.181913, 0, -0.0831133, 0, 0.2, 0, 0.0831133, 0, -0.181913, 1.33529, 1.19713, 1.13183 )
+
+[node name="PenteadeiraGrande" parent="Furniture" index="4" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.550747, 0.00721645, -2.49213 )
+
+[node name="Abajur" parent="Furniture" index="5" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0369719, 0.933039, -2.47866 )
+
+[node name="SmallTable" parent="Furniture" index="6" instance=ExtResource( 6 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -4.64426, -0.0195464, 3.38556 )
+
+[node name="SmallTable2" parent="Furniture" index="7" instance=ExtResource( 6 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -4.64426, -0.0195464, 1.38944 )
+
+[node name="SmallTable3" parent="Furniture" index="8" instance=ExtResource( 6 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -4.64426, 0.889832, 2.45276 )
+
+[node name="cadeira" parent="Furniture" index="9" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.49196, 0.00340852, -2.55959 )
+
+[node name="cadeira2" parent="Furniture" index="10" instance=ExtResource( 1 )]
+transform = Transform( -0.99956, 0, -0.0296486, 0, 1, 0, 0.0296486, 0, -0.99956, -2.49196, 0.62101, -2.57278 )
+
+[node name="cadeira3" parent="Furniture" index="11" instance=ExtResource( 1 )]
+transform = Transform( 0.999516, 0, 0.0310967, 0, 1, 0, -0.0310967, 0, 0.999516, -2.49196, 1.24509, -2.57278 )

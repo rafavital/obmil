@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/scenes/Rooms/room_square.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/CadeiraBar.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/furniturequepresta/TV_cursed.tscn" type="PackedScene" id=3]
+
+[node name="Room" instance=ExtResource( 1 )]
+
+[node name="Furniture" type="Spatial" parent="." index="6"]
+
+[node name="TV_00s" parent="Furniture" index="0" instance=ExtResource( 3 )]
+transform = Transform( 0.600529, 0.269312, 0.454792, 0.00597669, 0.684859, -0.413441, -0.528516, 0.313752, 0.512085, -0.992873, 1.64591, -1.12091 )
+
+[node name="CadeiraBar" parent="Furniture" index="1" instance=ExtResource( 2 )]
+transform = Transform( 0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -0.159581, -3.95812e-09, -0.115347 )
