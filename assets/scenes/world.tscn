@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://src/World.gd" type="Script" id=1]
 [ext_resource path="res://assets/scenes/player.tscn" type="PackedScene" id=2]
@@ -27,6 +27,9 @@ data = PoolVector3Array( 1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0,
 [sub_resource type="BoxShape" id=3]
 
 [sub_resource type="CylinderMesh" id=4]
+
+[sub_resource type="Environment" id=5]
+ambient_light_color = Color( 0.121569, 0.109804, 0.137255, 1 )
 
 [node name="World" type="Spatial"]
 script = ExtResource( 1 )
@@ -87,6 +90,9 @@ shape = SubResource( 3 )
 transform = Transform( 0.447332, 0, 0, 0, 1, 0, 0, 0, 0.447332, -3.23186, 1, -13.7937 )
 mesh = SubResource( 4 )
 material/0 = null
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 5 )
 [connection signal="called_dialogue" from="Player" to="." method="_on_Player_called_dialogue"]
 
 [editable path="Player"]
