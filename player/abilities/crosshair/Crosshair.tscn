@@ -12,9 +12,9 @@ script = ExtResource( 2 )
 [node name="Position2D" type="Position2D" parent="."]
 
 [node name="CenterDot" parent="Position2D" instance=ExtResource( 3 )]
-visible = false
 
 [node name="Lines" type="Position2D" parent="Position2D"]
+visible = false
 
 [node name="Line1" parent="Position2D/Lines" instance=ExtResource( 1 )]
 position = Vector2( -53.5, 0 )
