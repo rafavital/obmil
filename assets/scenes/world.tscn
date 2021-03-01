@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://src/World.gd" type="Script" id=1]
 [ext_resource path="res://assets/scenes/player.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://assets/scenes/Rooms/Roomvar9.tscn" type="PackedScene" id=11]
 [ext_resource path="res://assets/scenes/Rooms/Roomvar6.tscn" type="PackedScene" id=12]
 [ext_resource path="res://assets/scenes/Rooms/Roomvar11.tscn" type="PackedScene" id=13]
+[ext_resource path="res://assets/sounds/Obmil_ambience.wav" type="AudioStream" id=14]
 [ext_resource path="res://assets/scenes/Rooms/Roomvar7.tscn" type="PackedScene" id=15]
 [ext_resource path="res://assets/scenes/Rooms/Roomvar8.tscn" type="PackedScene" id=16]
 [ext_resource path="res://assets/scenes/Rooms/Roomvar12.tscn" type="PackedScene" id=17]
@@ -93,6 +94,14 @@ material/0 = null
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource( 5 )
+
+[node name="Music" type="Spatial" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+volume_db = -20.0
+pitch_scale = 0.5
+autoplay = true
 [connection signal="called_dialogue" from="Player" to="." method="_on_Player_called_dialogue"]
 
 [editable path="Player"]
