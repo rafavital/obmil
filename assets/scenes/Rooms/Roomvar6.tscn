@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/scenes/Rooms/room_square.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/furniturequepresta/SmallTable.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/furniturequepresta/TV_cursed.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/models/character/obmil_male.tscn" type="PackedScene" id=4]
 
 [node name="Room" instance=ExtResource( 1 )]
 room_id = 6
@@ -103,3 +104,9 @@ spot_range = 6.0772
 spot_attenuation = 0.732043
 spot_angle = 32.3967
 spot_angle_attenuation = 8.87656
+
+[node name="obmil_male" parent="." index="8" instance=ExtResource( 4 )]
+transform = Transform( -0.939693, 0, 0.34202, 0, 1, 0, -0.34202, 0, -0.939693, 2.0759, 0.6, 1.09612 )
+animation = "Sit_4"
+
+[editable path="obmil_male"]

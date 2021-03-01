@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/Abajur.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/scenes/Rooms/room_square.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/Sofa.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/TvStand.tscn" type="PackedScene" id=5]
 [ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/MesinhaCantoSala.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/models/character/obmil_male.tscn" type="PackedScene" id=7]
 
 [node name="Room" instance=ExtResource( 2 )]
 room_id = 3
@@ -22,3 +23,9 @@ room_id = 3
 transform = Transform( -0.000638793, 0, 0.199999, 0, 0.2, 0, -0.199999, 0, -0.000638793, -2.40215, 0.945747, -0.479615 )
 
 [node name="TvStand" parent="Furniture" index="4" instance=ExtResource( 5 )]
+
+[node name="obmil_male" parent="." index="8" instance=ExtResource( 7 )]
+transform = Transform( 0.72801, 0.122084, 0.674609, -0.671706, -0.0698436, 0.737517, 0.137156, -0.990059, 0.0311579, -0.143008, 0.727127, -0.464536 )
+animation = "Idle_police_arrest"
+
+[editable path="obmil_male"]

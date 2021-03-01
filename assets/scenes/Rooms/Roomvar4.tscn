@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://assets/scenes/Rooms/room_square.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/fogao.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/MicroOndas.tscn" type="PackedScene" id=6]
 [ext_resource path="res://assets/furniturequepresta/SmallTable.tscn" type="PackedScene" id=7]
 [ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/LixoCozinha.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/models/character/obmil_male.tscn" type="PackedScene" id=9]
 
 [node name="Room" instance=ExtResource( 1 )]
 room_id = 4
@@ -39,3 +40,9 @@ transform = Transform( -0.0559086, 0, -0.998436, 0, 1, 0, 0.998436, 0, -0.055908
 
 [node name="SmallTable" parent="Furniture" index="9" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.929 )
+
+[node name="obmil_male" parent="." index="8" instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.40501, 1.96878, 0.375214 )
+animation = "Sit_3"
+
+[editable path="obmil_male"]
