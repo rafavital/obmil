@@ -10,7 +10,7 @@
 [ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/Geladeira.tscn" type="PackedScene" id=9]
 
 [node name="Room" instance=ExtResource( 4 )]
-room_id = 4
+room_id = 22
 
 [node name="Furniture" type="Spatial" parent="." index="4"]
 

@@ -8,7 +8,7 @@
 [ext_resource path="res://assets/scenes/Rooms/room_square.tscn" type="PackedScene" id=7]
 
 [node name="Room" instance=ExtResource( 7 )]
-room_id = 3
+room_id = 21
 
 [node name="Furniture" type="Spatial" parent="." index="4"]
 
