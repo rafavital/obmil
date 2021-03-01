@@ -22,7 +22,7 @@ _global_script_class_icons={
 
 config/name="obmil"
 run/main_scene="res://assets/scenes/warning.tscn"
-config/icon="res://icon.png"
+config/icon="res://assets/sprites/obmil_icon.png"
 
 [autoload]
 
@@ -38,6 +38,11 @@ window/size/height=720
 interact={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":69,"unicode":0,"echo":false,"script":null)
+ ]
+}
+fullscreen={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777254,"unicode":0,"echo":false,"script":null)
  ]
 }
 
