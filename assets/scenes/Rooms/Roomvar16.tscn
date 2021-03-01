@@ -22,7 +22,7 @@ spot_range = 4.77919
 spot_angle = 48.062
 
 [node name="obmil_male" parent="." index="8" instance=ExtResource( 4 )]
-transform = Transform( -0.0290879, 0.706806, -0.706809, -0.999577, -0.0205682, 0.0205683, -2.79397e-09, 0.707108, 0.707106, -1.05753, 1.85749, -1.17139 )
+transform = Transform( -0.0290879, 0.706806, -0.706809, -0.999577, -0.0205682, 0.0205683, -2.79397e-09, 0.707108, 0.707106, -1.38505, 1.50756, -1.77552 )
 animation = "looking_at_mirror"
 
 [editable path="Furniture/TV_00s"]
