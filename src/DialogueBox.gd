@@ -5,6 +5,7 @@ export (String, FILE, "*.json") var dialogue_file_path : String
 onready var text = $UIElements/DialogueText
 onready var show_tween = $ShowDialogueTween
 onready var ui_elements = $UIElements
+onready var audio = $AudioStreamPlayer
 
 var dialogue_finished := false
 var current_dialogue : String
@@ -32,7 +33,7 @@ func show_dialogue (id : int) -> void:
 	
 	dialogue_finished = false
 	var txt = dialogue[str(id)]
-	text.bbcode_text = txt
+	text.bbcode_text = "[center]" + txt
 	Global.dialogues[id] = txt
 	
 	text.percent_visible = 0
@@ -61,10 +62,13 @@ func load_dialogue () -> Dictionary:
 
 func _hide () -> void:
 	ui_elements.hide()
+	audio.stop()
 
 
 func _show () -> void:
 	ui_elements.show()
+	audio.play()
+	
 
 
 func _on_ShowDialogueTween_tween_all_completed() -> void:
