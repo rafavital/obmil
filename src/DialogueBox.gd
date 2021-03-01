@@ -2,9 +2,9 @@ extends Control
 
 export (String, FILE, "*.json") var dialogue_file_path : String
 
-onready var text = $DialogueText
-onready var bg = $Background
+onready var text = $UIElements/DialogueText
 onready var show_tween = $ShowDialogueTween
+onready var ui_elements = $UIElements
 
 var dialogue_finished := false
 var current_dialogue : String
@@ -12,7 +12,7 @@ var rng = RandomNumberGenerator.new()
 
 func _ready () -> void:
 	_hide()	
-	dialogue_finished = false
+	dialogue_finished = true
 
 
 func _input(event: InputEvent) -> void:
@@ -29,10 +29,6 @@ func show_dialogue (id : int) -> void:
 	rng.randomize()
 	
 	var dialogue = load_dialogue()
-	
-	#var i = rng.randi_range(0, dialogue.size()-1)
-	#if Global.dialogues.has(i):
-	#	i = rng.randi_range(0, dialogue.size()-1)
 	
 	dialogue_finished = false
 	var txt = dialogue[str(id)]
@@ -64,12 +60,11 @@ func load_dialogue () -> Dictionary:
 
 
 func _hide () -> void:
-	bg.hide()
-	text.hide()
+	ui_elements.hide()
+
 
 func _show () -> void:
-	bg.show()
-	text.show()
+	ui_elements.show()
 
 
 func _on_ShowDialogueTween_tween_all_completed() -> void:

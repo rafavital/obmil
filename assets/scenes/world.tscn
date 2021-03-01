@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://src/World.gd" type="Script" id=1]
 [ext_resource path="res://assets/scenes/player.tscn" type="PackedScene" id=2]
@@ -13,11 +13,18 @@
 [ext_resource path="res://assets/scenes/Rooms/Roomvar9.tscn" type="PackedScene" id=11]
 [ext_resource path="res://assets/scenes/Rooms/Roomvar6.tscn" type="PackedScene" id=12]
 [ext_resource path="res://assets/scenes/Rooms/Roomvar11.tscn" type="PackedScene" id=13]
+[ext_resource path="res://assets/sounds/Obmil_ambience.wav" type="AudioStream" id=14]
 [ext_resource path="res://assets/scenes/Rooms/Roomvar7.tscn" type="PackedScene" id=15]
 [ext_resource path="res://assets/scenes/Rooms/Roomvar8.tscn" type="PackedScene" id=16]
 [ext_resource path="res://assets/scenes/Rooms/Roomvar12.tscn" type="PackedScene" id=17]
 [ext_resource path="res://assets/scenes/Rooms/Roomvar10.tscn" type="PackedScene" id=18]
 [ext_resource path="res://assets/scenes/Rooms/Roomvar4.tscn" type="PackedScene" id=19]
+[ext_resource path="res://assets/scenes/Rooms/Roomvar13.tscn" type="PackedScene" id=20]
+[ext_resource path="res://assets/scenes/Rooms/Roomvar16.tscn" type="PackedScene" id=21]
+[ext_resource path="res://assets/scenes/Rooms/Roomvar17.tscn" type="PackedScene" id=22]
+[ext_resource path="res://assets/scenes/Rooms/Roomvar15.tscn" type="PackedScene" id=23]
+[ext_resource path="res://assets/scenes/Rooms/Roomvar18.tscn" type="PackedScene" id=24]
+[ext_resource path="res://assets/scenes/Rooms/Roomvar14.tscn" type="PackedScene" id=25]
 
 [sub_resource type="PlaneMesh" id=1]
 
@@ -49,7 +56,7 @@ shape = SubResource( 2 )
 
 [node name="Rooms Manager" type="Spatial" parent="."]
 script = ExtResource( 4 )
-rooms = [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 5 ), ExtResource( 19 ), ExtResource( 10 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 11 ), ExtResource( 18 ), ExtResource( 13 ), ExtResource( 17 ) ]
+rooms = [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 5 ), ExtResource( 19 ), ExtResource( 10 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 11 ), ExtResource( 18 ), ExtResource( 13 ), ExtResource( 17 ), ExtResource( 20 ), ExtResource( 25 ), ExtResource( 23 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 24 ) ]
 
 [node name="Room" parent="Rooms Manager" instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3 )
@@ -93,6 +100,14 @@ material/0 = null
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource( 5 )
+
+[node name="Music" type="Spatial" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+volume_db = -20.0
+pitch_scale = 0.5
+autoplay = true
 [connection signal="called_dialogue" from="Player" to="." method="_on_Player_called_dialogue"]
 
 [editable path="Player"]
