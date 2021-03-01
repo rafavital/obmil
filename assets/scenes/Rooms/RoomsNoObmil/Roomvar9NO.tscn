@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/scenes/Rooms/room_square.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/furniturequepresta/cadeira.tscn" type="PackedScene" id=2]
+
+[node name="Room" instance=ExtResource( 1 )]
+room_id = 9
+
+[node name="Furniture" type="Spatial" parent="." index="4"]
+
+[node name="cadeira" parent="Furniture" index="0" instance=ExtResource( 2 )]
+transform = Transform( -0.866078, 0, -0.499909, 0, 1, 0, 0.499909, 0, -0.866078, -0.441726, 0.00340895, -0.510437 )
+
+[node name="SpotLight2" type="SpotLight" parent="." index="7"]
+transform = Transform( 0.85326, -0.140974, 0.502069, -0.296971, 0.660049, 0.690031, -0.428667, -0.737876, 0.521329, 0, 2.91742, 0.145318 )
+light_energy = 2.03
+light_indirect_energy = 0.0
+light_negative = true
+light_specular = 0.34
+spot_range = 7.59464
+spot_attenuation = 1.07177
+spot_angle = 22.2
+spot_angle_attenuation = 4.14106
+
+[node name="SpotLight" parent="." index="8"]
+light_energy = 3.63
+spot_range = 3.3079
+spot_angle = 38.4791
