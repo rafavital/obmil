@@ -1,0 +1,24 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/TvStand.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/Abajur.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/Sofa.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/furniturequepresta/TV_cursed.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/MesinhaCantoSala.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/scenes/Rooms/room_square.tscn" type="PackedScene" id=7]
+
+[node name="Room" instance=ExtResource( 7 )]
+room_id = 21
+
+[node name="Furniture" type="Spatial" parent="." index="4"]
+
+[node name="Abajur" parent="Furniture" index="0" instance=ExtResource( 3 )]
+
+[node name="MesinhaCantoSala" parent="Furniture" index="1" instance=ExtResource( 6 )]
+
+[node name="Sofa" parent="Furniture" index="2" instance=ExtResource( 4 )]
+
+[node name="TV_00s" parent="Furniture" index="3" instance=ExtResource( 5 )]
+transform = Transform( -0.000638793, 0, 0.199999, 0, 0.2, 0, -0.199999, 0, -0.000638793, -2.40215, 0.945747, -0.479615 )
+
+[node name="TvStand" parent="Furniture" index="4" instance=ExtResource( 2 )]

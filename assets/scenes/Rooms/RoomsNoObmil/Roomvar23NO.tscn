@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/Sofa.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/scenes/Rooms/room_square.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/MesinhaCantoSala.tscn" type="PackedScene" id=3]
+
+[node name="Room" instance=ExtResource( 2 )]
+room_id = 23
+
+[node name="Furniture" type="Spatial" parent="." index="4"]
+
+[node name="Sofa" parent="Furniture" index="0" instance=ExtResource( 1 )]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 0.317748, 0.00340899, -0.628293 )
+
+[node name="Sofa2" parent="Furniture" index="1" instance=ExtResource( 1 )]
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, -2.25512, 0.00340846, -0.498096 )
+
+[node name="MesinhaCantoSala" parent="Furniture" index="2" instance=ExtResource( 3 )]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, -2.35908, -4.98258e-08, -2.47415 )
+
+[node name="MesinhaCantoSala2" parent="Furniture" index="3" instance=ExtResource( 3 )]
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 0.401681, -4.98258e-08, -2.47415 )
