@@ -9,7 +9,7 @@ func _ready():
 	hide()
 
 func _input(event):
-	if Input.is_key_pressed(KEY_F) and $Timer.is_stopped():
+	if Input.is_mouse_button_pressed(BUTTON_LEFT) and $Timer.is_stopped():
 		visible = !visible
 		$Timer.start()
 		play_sound()
