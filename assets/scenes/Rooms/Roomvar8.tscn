@@ -20,3 +20,13 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.628396, 4.00236e-07, -2.245
 
 [node name="Abajur" parent="Furniture" index="3" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.623732, 0.941076, -2.22699 )
+
+[node name="SpotLight2" type="SpotLight" parent="." index="7"]
+transform = Transform( 1, 0, 0, 0, 0.0871557, 0.996195, 0, -0.996195, 0.0871558, -0.608669, 1.43318, -2.23373 )
+spot_angle = 77.2
+spot_angle_attenuation = 6.96441
+
+[node name="SpotLight" parent="." index="8"]
+transform = Transform( 1, 0, 0, 0, -0.0871559, -0.996195, 0, 0.996195, -0.0871559, -0.608669, 1.68871, -2.21137 )
+light_energy = 0.31
+spot_angle_attenuation = 15.4549
