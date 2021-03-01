@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="obmil"
-run/main_scene="res://assets/scenes/world.tscn"
+run/main_scene="res://assets/scenes/warning.tscn"
 config/icon="res://icon.png"
 
 [autoload]

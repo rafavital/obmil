@@ -3,5 +3,5 @@
 [ext_resource path="res://assets/font/open_dyslexic_2/OpenDyslexic-Regular.otf" type="DynamicFontData" id=1]
 
 [resource]
-size = 30
+size = 28
 font_data = ExtResource( 1 )

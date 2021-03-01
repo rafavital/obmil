@@ -9,8 +9,7 @@ export (int) var room_id = 0
 func _ready() -> void:
 	for door in get_children():
 		door.connect("body_entered", self, "_on_ExitTrigger_body_entered")
-	if room_id == -1:
-		print (get_tree().current_scene.name)
+	
 
 
 func _on_ExitTrigger_body_entered(body: Node) -> void:

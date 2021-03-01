@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/font/open_dyslexic_bold_40.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/font/open_dyslexic_regular_40.tres" type="DynamicFont" id=2]
+
+[node name="Warning" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/bold_font = ExtResource( 1 )
+custom_fonts/normal_font = ExtResource( 2 )
+bbcode_enabled = true
+bbcode_text = "[center] [b] [color=#ffff00] [shake] WARNING [/shake] [/color] [/b] 
+
+This game contains anonymous confessions from the website vigyaa.io and the subreddit r/offmychest. 
+
+Some of them may be upsetting.
+
+Players discretion advised. "
+text = "    WARNING    
+
+This game contains anonymous confessions from the website vigyaa.io and the subreddit r/offmychest. 
+
+Some of them may be upsetting.
+
+Players discretion advised. "
+__meta__ = {
+"_edit_use_anchors_": false
+}

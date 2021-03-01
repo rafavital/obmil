@@ -1,0 +1,7 @@
+[gd_resource type="DynamicFont" load_steps=2 format=2]
+
+[ext_resource path="res://assets/font/open_dyslexic_2/OpenDyslexic-Regular.otf" type="DynamicFontData" id=1]
+
+[resource]
+size = 40
+font_data = ExtResource( 1 )

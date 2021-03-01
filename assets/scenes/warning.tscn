@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/font/open_dyslexic_bold_40.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/font/open_dyslexic_regular_40.tres" type="DynamicFont" id=2]
+[ext_resource path="res://assets/scenes/warning_ui.tscn" type="PackedScene" id=3]
+[ext_resource path="res://src/Warning.gd" type="Script" id=4]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Warning" parent="." instance=ExtResource( 3 )]
+
+[node name="PressToPlay" type="RichTextLabel" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 637.0
+custom_fonts/bold_font = ExtResource( 1 )
+custom_fonts/normal_font = ExtResource( 2 )
+custom_colors/default_color = Color( 0.901961, 0.643137, 0.266667, 1 )
+bbcode_enabled = true
+bbcode_text = "[center] [wave] press E to continue"
+text = "  press E to continue"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TimeToRead" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+[connection signal="timeout" from="TimeToRead" to="." method="_on_TimeToRead_timeout"]
