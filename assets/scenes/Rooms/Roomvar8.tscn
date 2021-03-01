@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/scenes/Rooms/room_square.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/CamaSolteiro.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/Abajur.tscn" type="PackedScene" id=3]
 [ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/CriadoMudo.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/models/character/obmil_male.tscn" type="PackedScene" id=5]
 
 [node name="Room" instance=ExtResource( 1 )]
 room_id = 8
@@ -30,3 +31,9 @@ spot_angle_attenuation = 6.96441
 transform = Transform( 1, 0, 0, 0, -0.0871559, -0.996195, 0, 0.996195, -0.0871559, -0.608669, 1.68871, -2.21137 )
 light_energy = 0.31
 spot_angle_attenuation = 15.4549
+
+[node name="obmil_male" parent="." index="9" instance=ExtResource( 5 )]
+transform = Transform( -0.0485709, 0.99882, 0, -0.99882, -0.0485709, 0, 0, 0, 1, -0.622832, 0.808693, -0.930886 )
+animation = "Idle_police_arrest"
+
+[editable path="obmil_male"]

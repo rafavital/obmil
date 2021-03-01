@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://assets/scenes/Rooms/room_square.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/furniturequepresta/ObjetosAntigosCena/CadeiraBar.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/furniturequepresta/TV_cursed.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/models/character/obmil_male.tscn" type="PackedScene" id=4]
 
 [node name="Room" instance=ExtResource( 1 )]
 room_id = 16
@@ -19,5 +20,9 @@ transform = Transform( 0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -0.159581, -3.95812e-09,
 transform = Transform( -0.766793, -0.0222589, -0.641509, -0.156242, 0.975813, 0.152897, 0.622589, 0.217471, -0.751724, -0.976022, 2.37435, -1.19307 )
 spot_range = 4.77919
 spot_angle = 48.062
+
+[node name="obmil_male" parent="." index="8" instance=ExtResource( 4 )]
+transform = Transform( -0.0290879, 0.706806, -0.706809, -0.999577, -0.0205682, 0.0205683, -2.79397e-09, 0.707108, 0.707106, -1.05753, 1.85749, -1.17139 )
+animation = "looking_at_mirror"
 
 [editable path="Furniture/TV_00s"]
