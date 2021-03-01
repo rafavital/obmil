@@ -52,16 +52,16 @@ script = ExtResource( 4 )
 rooms = [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 3 ), ExtResource( 5 ), ExtResource( 19 ), ExtResource( 10 ), ExtResource( 12 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 11 ), ExtResource( 18 ), ExtResource( 13 ), ExtResource( 17 ) ]
 
 [node name="Room" parent="Rooms Manager" instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.098, 0, -2.35383 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3 )
 
 [node name="Room3" parent="Rooms Manager" instance=ExtResource( 8 )]
-transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 5.89035, 0, -2.35383 )
+transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, 6, 0, -3 )
 
 [node name="Room4" parent="Rooms Manager" instance=ExtResource( 8 )]
-transform = Transform( -1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 5.89035, 0, 3.64617 )
+transform = Transform( -1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 6, 0, 3 )
 
 [node name="Room2" parent="Rooms Manager" instance=ExtResource( 8 )]
-transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 0, 0, 3.63317 )
+transform = Transform( -1.62921e-07, 0, 1, 0, 1, 0, -1, 0, -1.62921e-07, 4.88763e-07, 0, 3 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 transform = Transform( 0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 5.42824, 1, 4.04638 )
