@@ -1,6 +1,8 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://assets/models/character/preto.material" type="Material" id=1]
+[ext_resource path="res://assets/scenes/dialogue_trigger.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/ObmilAnimation.gd" type="Script" id=3]
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "Body_Parts001"
@@ -1646,10 +1648,16 @@ tracks/26/imported = true
 tracks/26/enabled = true
 tracks/26/keys = PoolRealArray( 0, 1, 0, 0, 0, 0.712044, -6.88426e-10, 3.81668e-07, 0.702135, 1, 1, 1, 0.0416667, 1, 0, 0, 0, 0.712044, -6.88426e-10, 3.81668e-07, 0.702135, 1, 1, 1 )
 
+[sub_resource type="CylinderShape" id=11]
+radius = 1.06381
+height = 1.87322
+
 [node name="obmil_male" type="Spatial"]
+script = ExtResource( 3 )
+animation = "Idle_Judging"
 
 [node name="metarig" type="Spatial" parent="."]
-transform = Transform( 0, 0, 1, 0, 1, 0, -1, 0, 0, 0, 0, 0 )
+transform = Transform( -1.09278e-08, 0, 0.25, 0, 0.25, 0, -0.25, 0, -1.09278e-08, 0, 0, 0 )
 
 [node name="Skeleton" type="Skeleton" parent="metarig"]
 bones/0/name = "spine"
@@ -1802,3 +1810,11 @@ anims/Sit_3 = SubResource( 7 )
 anims/Sit_4 = SubResource( 8 )
 anims/chilling = SubResource( 9 )
 anims/looking_at_mirror = SubResource( 10 )
+
+[node name="DialogueTrigger" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.030835, 0 )
+
+[node name="CollisionShape" parent="DialogueTrigger" index="0"]
+shape = SubResource( 11 )
+
+[editable path="DialogueTrigger"]
